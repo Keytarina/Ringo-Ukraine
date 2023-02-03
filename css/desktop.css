@@ -1,0 +1,12 @@
+@media screen and (min-width:1200px) {
+    .container {
+        max-width: 1200px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .section {
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+}

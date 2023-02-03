@@ -1,0 +1,366 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+ul,
+ol {
+	margin: 0;
+	padding-left: 0;
+}
+
+body {
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--main-text-color);
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	/* width: 100%; */
+}
+.list {
+	list-style: none;
+}
+.link {
+	text-decoration: none;
+}
+.btn {
+
+}
+.btn:hover,
+.btn:focus {
+
+}
+.container {
+	width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.section {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.section-title {
+	margin-bottom: 80px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.1;
+	text-align: center;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+	color: var(----dark-color);
+}
+.no-scroll {
+	overflow: hidden;
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.is-hidden {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+}
+
+/*---------- HEADER ------------ */
+
+.header {
+}
+.container {
+}
+.header-navigation {
+}
+.header-logo {
+}
+.header-logo-icon {
+}
+.header-list {
+}
+.list {
+}
+.header-item {
+}
+.header-link {
+}
+.link {
+}
+.header-soc-list {
+}
+.header-soc-item {
+}
+.soc-link {
+}
+.soc-icon {
+}
+.header-tel-wrap {
+}
+.header-tel-icon {
+}
+.header-tel {
+}
+.hero {
+}
+.hero-title {
+}
+.hero-text {
+}
+.hero-button {
+}
+.btn {
+}
+.slider-switch {
+}
+.slider-arrows {
+}
+.slider-arrows-icon {
+}
+.slider-numbers {
+}
+.slider-numbers-wrap-1 {
+}
+.slider-number-1 {
+}
+.slider-numbers-wrap-2 {
+}
+.slider-number-2 {
+}
+.slider-numbers-wrap-3 {
+}
+.slider-number-3 {
+}
+.section-directions {
+}
+.directions-title {
+}
+.directions-list {
+}
+.directions-item {
+}
+.directions-numeration {
+}
+.directions-text {
+}
+.directions-item-icon {
+}
+.section-services {
+}
+.services-title {
+}
+.services-list {
+}
+.services-item {
+}
+.services-item-icon {
+}
+.services-item-text {
+}
+.section-about {
+}
+.about-title {
+}
+.about-first-text {
+}
+.about-list {
+}
+.about-item {
+}
+.about-item-text {
+}
+.section-advantages {
+}
+.advantages-title {
+}
+.advantages-list {
+}
+.advantages-item {
+}
+.advantages-item-number {
+}
+.advantages-item-wrap {
+}
+.advantages-item-title {
+}
+.advantages-item-text {
+}
+.current {
+}
+.section-discussion {
+}
+.main-form {
+}
+.main-form-title {
+}
+.main-form-text {
+}
+.form-field {
+}
+.form-input {
+}
+.input-wrap {
+}
+.input-file {
+}
+.input-icon {
+}
+.form-button {
+}
+.checkbox-field {
+}
+.input-check {
+}
+.visually-hidden {
+}
+.check-text {
+}
+.check-icon {
+}
+.discussion-img {
+}
+.section-stages {
+}
+.stages-list {
+}
+.stages-item {
+}
+.stages-item-number {
+}
+.stages-item-title {
+}
+.stages-item-text {
+}
+.section-finished-products {
+}
+.finished-products-title {
+}
+.slider-finished-products {
+}
+.section-gifts {
+}
+.gifts-title {
+}
+.gifts-text {
+}
+.gifts-btn {
+}
+.toster {
+}
+.toster-img {
+}
+.toster-wrap {
+}
+.toster-icon {
+}
+.toster-text {
+}
+.microwave-oven {
+}
+.microwave-oven-img {
+}
+.microwave-oven-wrap {
+}
+.microwave-oven-icon {
+}
+.microwave-oven-text {
+}
+.backdrop {
+}
+.is-hidden {
+}
+.modal-gifts {
+}
+.modal-button {
+}
+.modal-button-icon {
+}
+.modal-form {
+}
+.modal-form-gift {
+}
+.form-title {
+}
+.form-text {
+}
+.section-partners {
+}
+.partners-title {
+}
+.slider-partners {
+}
+.section-questions {
+}
+.questions-img {
+}
+.footer {
+}
+.main-footer {
+}
+.footer-logo-wrap {
+}
+.footer-soc {
+}
+.footer-soc-text {
+}
+.footer-soc-list {
+}
+.footer-soc-item {
+}
+.footer-nav-wrap {
+}
+.footer-left-list {
+}
+.footer-left-item {
+}
+.footer-left-link {
+}
+.footer-right-list {
+}
+.footer-right-item {
+}
+.footer-right-link {
+}
+.footer-tel-btn-wrap {
+}
+.footer-tel-wrap {
+}
+.footer-tel-icon {
+}
+.footer-tel {
+}
+.footer-btn {
+}
+.subfooter {
+}
+.subfooter-text {
+}
+.subfooter-brands-list {
+}
+.subfooter-brands-item {
+}
+.subfooter-brands-link {
+}
+.subfooter-copywrite-wrap {
+}
+.subfooter-copywrite {
+}
+.subfooter-design {
+}

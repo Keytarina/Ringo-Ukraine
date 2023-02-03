@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ringo</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/small-tablet.css" />
+		<link rel="stylesheet" href="./css/tablet.css" />
+		<link rel="stylesheet" href="./css/desktop.css" />
+	</head>
+	<body>
+		<header class="header container">
+			<nav class="header-navigation">
+				<a href="/" class="header-logo">
+					<svg class="header-logo-icon" width="100" height="44">
+						<use href="./img/icons.svg#logo"></use>
+					</svg>
+					<!-- <img src="./img/logo.png" alt="logo" /> -->
+				</a>
+				<!-- menu -->
+				<ul class="header-list list">
+					<li class="header-item">
+						<a class="header-link link" href="#">Напрямки</a>
+					</li>
+					<li class="header-item">
+						<a class="header-link link" href="#">Про компанію</a>
+					</li>
+					<li class="header-item">
+						<a class="header-link link" href="#">Переваги</a>
+					</li>
+					<li class="header-item">
+						<a class="header-link link" href="#">Етапи роботи</a>
+					</li>
+				</ul>
+			</nav>
+			<ul class="header-soc-list list">
+				<li class="header-soc-item">
+					<a href="#" class="soc-link link">
+						<svg class="soc-icon" width="6" height="6">
+							<use href="./images/icons.svg#instagram"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="header-soc-item">
+					<a href="#" class="soc-link link">
+						<svg class="soc-icon" width="6" height="6">
+							<use href="./images/icons.svg#facebook"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+			<div class="header-tel-wrap">
+				<svg class="header-tel-icon" width="13" height="20">
+					<use href="./images/icons.svg#tel"></use>
+				</svg>
+				<a class="header-tel" href="tel:+380676615415">+380 67661 5415</a>
+			</div>
+		</header>
+		<main>
+			<!-- hero -->
+			<div class="hero">
+				<h1 class="hero-title">виробництво меблів</h1>
+				<p class="hero-text">
+					Ми виконуємо комплексне виготовлення корпусних меблів для житлових і
+					комерційних приміщень, забезпечимо Вас якісним меблевим продуктом
+					власного виробництва.
+				</p>
+				<button type="button" class="hero-button btn">Обговорити проект</button>
+				<div class="slider-switch">
+					<div class="slider-arrows">
+						<svg class="slider-arrows-icon" width="" height="">
+							<use href="./images/icons.svg#l"></use>
+						</svg>
+						<svg class="slider-arrows-icon" width="" height="">
+							<use href="./images/icons.svg#"></use>
+						</svg>
+					</div>
+					<div class="slider-numbers">
+						<div class="slider-numbers-wrap-1">
+							<span class="slider-number-1">1</span>
+						</div>
+						<div class="slider-numbers-wrap-2">
+							<span class="slider-number-2">2</span>
+						</div>
+						<div class="slider-numbers-wrap-3">
+							<span class="slider-number-3">3</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- directions -->
+			<section class="section section-directions container">
+				<h1 class="directions-title">Основні напрямки</h1>
+				<ul class="directions-list list">
+					<li class="directions-item">
+						<div class="directions-numeration">01</div>
+						<p class="directions-text">Дизайн інтерєру</p>
+						<img
+							srcset="
+								./img/directions/directions-1.jpg    1x,
+								./img/directions/directions-1-2x.jpg 2x
+							"
+							class="directions-item-icon"
+							src="./img/directions/directions-1.jpg"
+							alt="Зображення дизайну"
+							width="333"
+						/>
+					</li>
+					<li class="directions-item">
+						<div class="directions-numeration">02</div>
+						<p class="directions-text">Виробництво меблів</p>
+						<img
+							srcset="
+								./img/directions/directions-2.jpg    1x,
+								./img/directions/directions-2-2x.jpg 2x
+							"
+							class="directions-item-icon"
+							src="./img/directions/directions-2.jpg"
+							alt="Зображення виробництва"
+							width="333"
+						/>
+					</li>
+					<li class="directions-item">
+						<div class="directions-numeration">02</div>
+						<p class="directions-text">Комплексне меблювання</p>
+						<img
+							srcset="
+								./img/directions/directions-3.jpg    1x,
+								./img/directions/directions-3-2x.jpg 2x
+							"
+							class="directions-item-icon"
+							src="./img/directions/directions-3.jpg"
+							alt="Зображення меблювання"
+							width="333"
+						/>
+					</li>
+				</ul>
+			</section>
+
+			<!-- services -->
+			<section class="section section-services">
+				<h1 class="services-title">Ми забезпечемо вас</h1>
+				<ul class="services-list list">
+					<li class="services-item">
+						<svg class="services-item-icon" width="" height="">
+							<use href="./images/icons.svg#l"></use>
+						</svg>
+						<p class="services-item-text">Меблями</p>
+					</li>
+					<li class="services-item">
+						<svg class="services-item-icon" width="" height="">
+							<use href="./images/icons.svg#l"></use>
+						</svg>
+						<p class="services-item-text">Освітленням</p>
+					</li>
+					<li class="services-item">
+						<svg class="services-item-icon" width="" height="">
+							<use href="./images/icons.svg#l"></use>
+						</svg>
+						<p class="services-item-text">Побутовою технікою</p>
+					</li>
+					<li class="services-item">
+						<svg class="services-item-icon" width="" height="">
+							<use href="./images/icons.svg#l"></use>
+						</svg>
+						<p class="services-item-text">Дверима</p>
+					</li>
+					<li class="services-item">
+						<svg class="services-item-icon" width="" height="">
+							<use href="./images/icons.svg#l"></use>
+						</svg>
+						<p class="services-item-text">
+							Стіновими панелями та підлоговим покриттям
+						</p>
+					</li>
+					<li class="services-item">
+						<svg class="services-item-icon" width="" height="">
+							<use href="./images/icons.svg#l"></use>
+						</svg>
+						<p class="services-item-text">Проектуванням</p>
+					</li>
+				</ul>
+			</section>
+
+			<!-- about -->
+			<section class="section-about">
+				<h1 hiden class="about-title container">Про проект Рінго Украхна</h1>
+				<p class="about-first-text">
+					Проект Рінго Україна - створений виконувати об`єктні задачі
+					комплексного меблювання житлових та комерційних приміщень.
+				</p>
+				<ul class="about-list list">
+					<li class="about-item">
+						<p class="about-item-text">
+							Наш колектив націлений на результат - вчасно реалізувати проект на
+							найвищому рівні. Ми забезпечуємо спокій замовника та вирішуємо
+							будь-які задачі
+						</p>
+					</li>
+					<li class="about-item">
+						<p class="about-item-text">
+							Рінго найкращий підрядник прораба, дизайнера, проект-менеджера або
+							персональний помічник власника бізнесу, квартири чи салону
+						</p>
+					</li>
+				</ul>
+			</section>
+
+			<!-- advantages -->
+			<section class="section section-advantages container">
+				<h1 class="advantages-title">Наші переваги</h1>
+				<ul class="advantages-list list">
+					<li class="advantages-item">
+						<span class="advantages-item-number">01</span>
+						<div class="advantages-item-wrap">
+							<p class="advantages-item-title">Мобільність</p>
+							<p class="advantages-item-text">
+								Проводимо зустрічі на об`єктах в затишних закладах Києва
+							</p>
+						</div>
+					</li>
+					<li class="advantages-item">
+						<span class="advantages-item-number">02</span>
+						<div class="advantages-item-wrap">
+							<p class="advantages-item-title">Мобільність</p>
+							<p class="advantages-item-text">
+								Система нашої роботи зосереджена на якості та термінах
+								завершення проекту
+							</p>
+						</div>
+					</li>
+					<li class="advantages-item">
+						<span class="advantages-item-number current">03</span>
+						<div class="advantages-item-wrap">
+							<p class="advantages-item-title current">Мобільність</p>
+							<p class="advantages-item-text">
+								Виготовляємо виключно з перевірених європейських брендів
+							</p>
+						</div>
+					</li>
+					<li class="advantages-item">
+						<span class="advantages-item-number">04 </span>
+						<div class="advantages-item-wrap">
+							<p class="advantages-item-title">Професіоналізм</p>
+							<p class="advantages-item-text">
+								Наша команда - це клуб професіоналів, об`єднаних в одній
+								компанії
+							</p>
+						</div>
+					</li>
+					<li class="advantages-item">
+						<span class="advantages-item-number">05</span>
+						<div class="advantages-item-wrap">
+							<p class="advantages-item-title">Вигідність</p>
+							<p class="advantages-item-text">
+								Ми відмовились від шоу-руму та офісу на користь вартості та
+								мобільності
+							</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+
+			<!-- discussion -->
+			<section class="section-discussion">
+				<form class="main-form">
+					<p class="main-form-title">Обговоримо ваш проект?</p>
+					<p class="main-form-text">
+						Заповніть форму і найближчим часом ми зв'яжемося з вами!
+					</p>
+					<div class="form-field">
+						<input
+							type="name"
+							class="form-input"
+							name="discussion-name"
+							placeholder="Ім'я"
+							required
+						/>
+					</div>
+					<div class="form-field">
+						<input
+							type="tel"
+							class="form-input"
+							name="discussion-tel"
+							placeholder="Номер телефону"
+							required
+						/>
+					</div>
+					<div class="form-field">
+						<div class="input-wrap">
+							<label for="file" class="input-file">Прикріпити проект</label>
+							<input
+								type="file"
+								class="form-input"
+								name="discussion-name"
+								id="file"
+							/>
+							<svg class="input-icon" width="15" height="18">
+								<use href="./images/icons.svg#"></use>
+							</svg>
+						</div>
+					</div>
+
+					<button type="submit" class="form-button btn">Відправити</button>
+
+					<div class="checkbox-field">
+						<input
+							type="checkbox"
+							class="input-check visually-hidden"
+							name="privacy"
+							value="true"
+							id="privacy"
+						/>
+						<label for="privacy" class="check-text">
+							<span>
+								<svg class="check-icon" width="5" height="5">
+									<use href="./images/icons.svg#"></use>
+								</svg>
+							</span>
+							Даю згоду на оброблення персональних даних
+						</label>
+					</div>
+				</form>
+				<div class="discussion-img"></div>
+			</section>
+
+			<!-- stages -->
+			<section class="section section-stages container">
+				<ul class="stages-list list">
+					<li class="stages-item">
+						<div class="stages-item-number">01</div>
+						<p class="stages-item-title">Підписання договору</p>
+						<p class="stages-item-text">
+							Визначаємось з бюджетом, матеріалами та фурнітурою. Вносимо правки
+							в проект, підписуємо пакет документів.
+						</p>
+					</li>
+					<li class="stages-item">
+						<div class="stages-item-number">02</div>
+						<p class="stages-item-title">Виготовлення</p>
+						<p class="stages-item-text">
+							Після підписання договору та визначення термінів, команда Рінго
+							приступає до найцікавішого - виробництва!
+						</p>
+					</li>
+					<li class="stages-item">
+						<div class="stages-item-number">03</div>
+						<p class="stages-item-title">Встановлення</p>
+						<p class="stages-item-text">
+							По готовності виробництва починаємо монтаж на обєкті. У домовлений
+							час виконуємо доставку та монтаж.
+						</p>
+					</li>
+					<li class="stages-item">
+						<div class="stages-item-number">04</div>
+						<p class="stages-item-title">Новосілля</p>
+						<p class="stages-item-text">
+							По закінченню робимо перевірку та підписуємо акт закінчення
+							робівт.
+						</p>
+					</li>
+				</ul>
+			</section>
+
+			<!-- finished-products -->
+			<section class="section section-finished-products">
+				<div class="finished-products-title">Зараз в роботі</div>
+				<div class="slider-finished-products">Слайдер</div>
+			</section>
+
+			<!-- gifts -->
+			<section class="section-gifts">
+				<h1 class="gifts-title">Рінго роздає подарунки!</h1>
+				<p class="gifts-text">
+					При замовленні до нового року, отримай цінний подарунок для свого
+					комфорту
+				</p>
+				<button class="gifts-btn btn">Хочу подарунок</button>
+
+				<div class="toster">
+					<img class="toster-img" src="" alt="Приклад подарунку - тостер" />
+					<div class="toster-wrap">
+						<svg class="toster-icon" width="18" height="18">
+							<use href="./images/icons.svg#"></use>
+						</svg>
+						<p class="toster-text">Подарунок</p>
+					</div>
+				</div>
+
+				<div class="microwave-oven">
+					<img
+						class="microwave-oven-img"
+						src=""
+						alt="Приклад подарунку - мікрохвильова піч"
+					/>
+					<div class="microwave-oven-wrap">
+						<svg class="microwave-oven-icon" width="18" height="18">
+							<use href="./images/icons.svg#"></use>
+						</svg>
+						<p class="microwave-oven-text">Подарунок</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- modal gifts -->
+			<div class="backdrop is-hidden" data-modal>
+				<div class="modal-gifts">
+					<button type="button" class="modal-button btn" data-modal-close>
+						<svg class="modal-button-icon" width="23" height="23">
+							<use href="./images/icons.svg#close"></use>
+						</svg>
+					</button>
+					<form class="modal-form modal-form-gift">
+						<p class="form-title">Хочете отримати подарунок?</p>
+						<p class="form-text">
+							Заповніть форму, і ми звяжемося та розповімо про умови акції
+						</p>
+						<div class="form-field">
+							<input
+								type="name"
+								class="form-input"
+								name="gift-name"
+								placeholder="Ім'я"
+								required
+							/>
+						</div>
+						<div class="form-field">
+							<input
+								type="tel"
+								class="form-input"
+								name="gift-tel"
+								placeholder="Номер телефону"
+								required
+							/>
+						</div>
+
+						<button type="submit" class="form-button btn">Відправити</button>
+
+						<div class="checkbox-field">
+							<input
+								type="checkbox"
+								class="input-check visually-hidden"
+								name="privacy"
+								value="true"
+								id="privacy"
+							/>
+							<label for="privacy" class="check-text">
+								<span>
+									<svg class="check-icon" width="5" height="5">
+										<use href="./images/icons.svg#"></use>
+									</svg>
+								</span>
+								Даю згоду на оброблення персональних даних
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<!-- Our partners -->
+			<section class="section section-partners container">
+				<h1 class="partners-title">Наші партнери</h1>
+				<div class="slider-partners">
+					<!-- Слайдер з svg -->
+				</div>
+			</section>
+
+			<!-- questions -->
+			<section class="section-questions">
+				<form class="main-form">
+					<p class="main-form-title">Залишилися питання?</p>
+					<p class="main-form-text">
+						Отримай безкоштовну консультацію менеджера та прорахунок проекту
+					</p>
+					<div class="form-field">
+						<input
+							type="name"
+							class="form-input"
+							name="questions-name"
+							placeholder="Ім'я"
+							required
+						/>
+					</div>
+					<div class="form-field">
+						<input
+							type="tel"
+							class="form-input"
+							name="questions-tel"
+							placeholder="Номер телефону"
+							required
+						/>
+					</div>
+					<div class="form-field">
+						<div class="input-wrap">
+							<label for="file" class="input-file">Прикріпити проект</label>
+							<input
+								type="file"
+								class="form-input"
+								name="questions-name"
+								id="file"
+							/>
+							<svg class="input-icon" width="15" height="18">
+								<use href="./images/icons.svg#"></use>
+							</svg>
+						</div>
+					</div>
+
+					<button type="submit" class="form-button btn">Відправити</button>
+
+					<div class="checkbox-field">
+						<input
+							type="checkbox"
+							class="input-check visually-hidden"
+							name="privacy"
+							value="true"
+							id="privacy"
+						/>
+						<label for="privacy" class="check-text">
+							<span>
+								<svg class="check-icon" width="5" height="5">
+									<use href="./images/icons.svg#"></use>
+								</svg>
+							</span>
+							Даю згоду на оброблення персональних даних
+						</label>
+					</div>
+				</form>
+				<div class="questions-img"></div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="main-footer">
+					<div class="footer-logo-wrap">
+						<a href="/" class="header-logo">
+							<svg class="header-logo-icon" width="122" height="53">
+								<use href="./img/logo.svg"></use>
+							</svg>
+						</a>
+						<div class="footer-soc">
+							<div class="footer-soc-text">Соцмережі:</div>
+							<ul class="footer-soc-list list">
+								<li class="footer-soc-item">
+									<a href="#" class="soc-link link">
+										<svg class="soc-icon" width="6" height="6">
+											<use href="./images/icons.svg#instagram"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="footer-soc-item">
+									<a href="#" class="soc-link link">
+										<svg class="soc-icon" width="6" height="6">
+											<use href="./images/icons.svg#facebook"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="footer-nav-wrap">
+						<ul class="footer-left-list list">
+							<li class="footer-left-item">
+								<a href="" class="footer-left-link link">Основні напрямки</a>
+							</li>
+							<li class="footer-left-item">
+								<a href="" class="footer-left-link link">Про компанію</a>
+							</li>
+							<li class="footer-left-item">
+								<a href="" class="footer-left-link link">Переваги</a>
+							</li>
+						</ul>
+						<ul class="footer-right-list list">
+							<li class="footer-right-item">
+								<a href="" class="footer-right-link link">Етапи роботи</a>
+							</li>
+							<li class="footer-right-item">
+								<a href="" class="footer-right-link link">Зараз в роботі</a>
+							</li>
+							<li class="footer-right-item">
+								<a href="" class="footer-right-link link">Стати партнером</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="footer-tel-btn-wrap">
+						<div class="footer-tel-wrap">
+							<svg class="footer-tel-icon" width="13" height="20">
+								<use href="./images/icons.svg#tel"></use>
+							</svg>
+							<a class="footer-tel" href="tel:+380676615415">+380 67661 5415</a>
+						</div>
+						<button class="footer-btn btn">На каву з менеджером!</button>
+					</div>
+				</div>
+				<div class="subfooter">
+					<p class="subfooter-text">Бренди комплектуючих</p>
+					<ul class="subfooter-brands-list list">
+						<li class="subfooter-brands-item">
+							<a href="#" class="subfooter-brands-link link">
+								<img src="" alt="Логотип бренду" />
+							</a>
+						</li>
+						<li class="subfooter-brands-item">
+							<a href="#" class="subfooter-brands-link link">
+								<img src="" alt="Логотип бренду" />
+							</a>
+						</li>
+						<li class="subfooter-brands-item">
+							<a href="#" class="subfooter-brands-link link">
+								<img src="" alt="Логотип бренду" />
+							</a>
+						</li>
+						<li class="subfooter-brands-item">
+							<a href="#" class="subfooter-brands-link link">
+								<img src="" alt="Логотип бренду" />
+							</a>
+						</li>
+						<li class="subfooter-brands-item">
+							<a href="#" class="subfooter-brands-link link">
+								<img src="" alt="Логотип бренду" />
+							</a>
+						</li>
+						<li class="subfooter-brands-item">
+							<a href="#" class="subfooter-brands-link link">
+								<img src="" alt="Логотип бренду" />
+							</a>
+						</li>
+						<li class="subfooter-brands-item">
+							<a href="#" class="subfooter-brands-link link">
+								<img src="" alt="Логотип бренду" />
+							</a>
+						</li>
+						<li class="subfooter-brands-item">
+							<a href="#" class="subfooter-brands-link link">
+								<img src="" alt="Логотип бренду" />
+							</a>
+						</li>
+						<li class="subfooter-brands-item">
+							<a href="#" class="subfooter-brands-link link">
+								<img src="" alt="Логотип бренду" />
+							</a>
+						</li>
+					</ul>
+					<div class="subfooter-copywrite-wrap">
+						<p class="subfooter-copywrite">&#169; 2021 Ringo</p>
+						<p class="subfooter-design">Дизайн сайту</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
