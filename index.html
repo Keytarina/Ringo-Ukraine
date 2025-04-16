@@ -8,7 +8,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;display=swap"
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
 		<link
@@ -18,6 +18,7 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+
 		<link rel="stylesheet" href="./css/styles.css" />
 		<link rel="stylesheet" href="./css/small-tablet.css" />
 		<link rel="stylesheet" href="./css/tablet.css" />
@@ -25,127 +26,172 @@
 	</head>
 	<body>
 		<header class="header container">
-			<nav class="header-navigation">
+			<div class="header-top">
 				<a href="/" class="header-logo">
 					<svg class="header-logo-icon" width="100" height="44">
-						<use href="./img/icons.svg#logo"></use>
+						<use href="./images/icons.svg#logo"></use>
 					</svg>
-					<!-- <img src="./img/logo.png" alt="logo" /> -->
 				</a>
-				<!-- menu -->
-				<ul class="header-list list">
-					<li class="header-item">
-						<a class="header-link link" href="#">Напрямки</a>
-					</li>
-					<li class="header-item">
-						<a class="header-link link" href="#">Про компанію</a>
-					</li>
-					<li class="header-item">
-						<a class="header-link link" href="#">Переваги</a>
-					</li>
-					<li class="header-item">
-						<a class="header-link link" href="#">Етапи роботи</a>
-					</li>
-				</ul>
-			</nav>
-			<ul class="header-soc-list list">
-				<li class="header-soc-item">
-					<a href="#" class="soc-link link">
-						<svg class="soc-icon" width="6" height="6">
-							<use href="./images/icons.svg#instagram"></use>
+				<button
+					type="button"
+					class="menu-open-btn"
+					aria-label="Кнопка для відкриття мобільного меню"
+					data-menu-open
+				>
+					<svg width="30" height="20">
+						<use class="menu-open-icon" href="./images/icons.svg#burger"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="mob-menu is-hidden" data-menu>
+				<div class="menu-container">
+					<button
+						type="button"
+						class="menu-close-btn"
+						aria-label="Кнопка для закриття мобільного меню"
+						data-menu-close
+					>
+						<svg width="16" height="16">
+							<use
+								class="menu-close-icon"
+								href="./images/icons.svg#close"
+							></use>
 						</svg>
-					</a>
-				</li>
-				<li class="header-soc-item">
-					<a href="#" class="soc-link link">
-						<svg class="soc-icon" width="6" height="6">
-							<use href="./images/icons.svg#facebook"></use>
-						</svg>
-					</a>
-				</li>
-			</ul>
-			<div class="header-tel-wrap">
-				<svg class="header-tel-icon" width="13" height="20">
-					<use href="./images/icons.svg#tel"></use>
-				</svg>
-				<a class="header-tel" href="tel:+380676615415">+380 67661 5415</a>
+					</button>
+					<div class="menu-top">
+						<nav class="header-navigation">
+							<a href="/" class="header-logo">
+								<svg class="header-logo-icon" width="100" height="44">
+									<use href="./images/icons.svg#logo"></use>
+								</svg>
+							</a>
+							<!-- menu -->
+							<ul class="header-list list">
+								<li class="header-item">
+									<a class="header-link link" href="#">Напрямки</a>
+								</li>
+								<li class="header-item">
+									<a class="header-link link" href="#">Про компанію</a>
+								</li>
+								<li class="header-item">
+									<a class="header-link link" href="#">Переваги</a>
+								</li>
+								<li class="header-item">
+									<a class="header-link link" href="#">Етапи роботи</a>
+								</li>
+							</ul>
+						</nav>
+						<ul class="header-soc-list list">
+							<li class="header-soc-item">
+								<a href="#" class="soc-link link">
+									<svg class="soc-icon" width="24" height="24">
+										<use href="./images/icons.svg#instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="header-soc-item">
+								<a href="#" class="soc-link link">
+									<svg class="soc-icon" width="10" height="21">
+										<use href="./images/icons.svg#facebook"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu-bottom">
+						<div class="header-tel-wrap">
+							<svg class="header-tel-icon" width="22" height="22">
+								<use href="./images/icons.svg#tel"></use>
+							</svg>
+							<a class="header-tel link" href="tel:+380676615415"
+								>+380 67661 5415</a
+							>
+						</div>
+						<button type="button" class="hero-button btn">
+							Обговорити проект
+						</button>
+					</div>
+				</div>
 			</div>
 		</header>
 		<main>
 			<!-- hero -->
 			<div class="hero">
-				<h1 class="hero-title">виробництво меблів</h1>
-				<p class="hero-text">
-					Ми виконуємо комплексне виготовлення корпусних меблів для житлових і
-					комерційних приміщень, забезпечимо Вас якісним меблевим продуктом
-					власного виробництва.
-				</p>
-				<button type="button" class="hero-button btn">Обговорити проект</button>
-				<div class="slider-switch">
-					<div class="slider-arrows">
-						<svg class="slider-arrows-icon" width="" height="">
-							<use href="./images/icons.svg#l"></use>
-						</svg>
-						<svg class="slider-arrows-icon" width="" height="">
-							<use href="./images/icons.svg#"></use>
-						</svg>
-					</div>
-					<div class="slider-numbers">
-						<div class="slider-numbers-wrap-1">
-							<span class="slider-number-1">1</span>
+				<div class="container">
+					<h2 class="hero-title">виробництво меблів</h2>
+					<p class="hero-text">
+						Ми виконуємо комплексне виготовлення корпусних меблів для житлових і
+						комерційних приміщень, забезпечимо Вас якісним меблевим продуктом
+						власного виробництва.
+					</p>
+					<button type="button" class="hero-btn btn">Обговорити проект</button>
+					<div class="slider-switch">
+						<div class="slider-arrows">
+							<svg class="slider-arrows-icon" width="20">
+								<use href="./images/icons.svg#arrow-left"></use>
+							</svg>
+							<svg class="slider-arrows-icon" width="20">
+								<use href="./images/icons.svg#arrow-right"></use>
+							</svg>
 						</div>
-						<div class="slider-numbers-wrap-2">
-							<span class="slider-number-2">2</span>
-						</div>
-						<div class="slider-numbers-wrap-3">
-							<span class="slider-number-3">3</span>
-						</div>
+						<ul class="slider-numbers list">
+							<li class="slider-numbers-wrap">
+								<span class="slider-number">1</span>
+							</li>
+							<li class="slider-numbers-wrap">
+								<span class="slider-number">2</span>
+							</li>
+							<li class="slider-numbers-wrap number-current">
+								<span class="slider-number">3</span>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 
 			<!-- directions -->
 			<section class="section section-directions container">
-				<h1 class="directions-title">Основні напрямки</h1>
+				<h2 class="directions-title">Основні напрямки</h2>
 				<ul class="directions-list list">
 					<li class="directions-item">
 						<div class="directions-numeration">01</div>
-						<p class="directions-text">Дизайн інтерєру</p>
+						<h3 class="directions-text">Дизайн інтерєру</h3>
 						<img
 							srcset="
-								./img/directions/directions-1.jpg    1x,
-								./img/directions/directions-1-2x.jpg 2x
+								./images/directions/directions-1.jpg    1x,
+								./images/directions/directions-1-2x.jpg 2x
 							"
 							class="directions-item-icon"
-							src="./img/directions/directions-1.jpg"
+							src="./images/directions/directions-1.jpg"
 							alt="Зображення дизайну"
 							width="333"
 						/>
 					</li>
 					<li class="directions-item">
 						<div class="directions-numeration">02</div>
-						<p class="directions-text">Виробництво меблів</p>
+						<h3 class="directions-text">Виробництво меблів</h3>
 						<img
 							srcset="
-								./img/directions/directions-2.jpg    1x,
-								./img/directions/directions-2-2x.jpg 2x
+								./images/directions/directions-2.jpg    1x,
+								./images/directions/directions-2-2x.jpg 2x
 							"
 							class="directions-item-icon"
-							src="./img/directions/directions-2.jpg"
+							src="./images/directions/directions-2.jpg"
 							alt="Зображення виробництва"
 							width="333"
 						/>
 					</li>
 					<li class="directions-item">
 						<div class="directions-numeration">02</div>
-						<p class="directions-text">Комплексне меблювання</p>
+						<h3 class="directions-text">Комплексне меблювання</h3>
 						<img
 							srcset="
-								./img/directions/directions-3.jpg    1x,
-								./img/directions/directions-3-2x.jpg 2x
+								./images/directions/directions-3.jpg    1x,
+								./images/directions/directions-3-2x.jpg 2x
 							"
 							class="directions-item-icon"
-							src="./img/directions/directions-3.jpg"
+							src="./images/directions/directions-3.jpg"
 							alt="Зображення меблювання"
 							width="333"
 						/>
@@ -155,58 +201,68 @@
 
 			<!-- services -->
 			<section class="section section-services">
-				<h1 class="services-title">Ми забезпечемо вас</h1>
-				<ul class="services-list list">
-					<li class="services-item">
-						<svg class="services-item-icon" width="" height="">
-							<use href="./images/icons.svg#l"></use>
-						</svg>
-						<p class="services-item-text">Меблями</p>
-					</li>
-					<li class="services-item">
-						<svg class="services-item-icon" width="" height="">
-							<use href="./images/icons.svg#l"></use>
-						</svg>
-						<p class="services-item-text">Освітленням</p>
-					</li>
-					<li class="services-item">
-						<svg class="services-item-icon" width="" height="">
-							<use href="./images/icons.svg#l"></use>
-						</svg>
-						<p class="services-item-text">Побутовою технікою</p>
-					</li>
-					<li class="services-item">
-						<svg class="services-item-icon" width="" height="">
-							<use href="./images/icons.svg#l"></use>
-						</svg>
-						<p class="services-item-text">Дверима</p>
-					</li>
-					<li class="services-item">
-						<svg class="services-item-icon" width="" height="">
-							<use href="./images/icons.svg#l"></use>
-						</svg>
-						<p class="services-item-text">
-							Стіновими панелями та підлоговим покриттям
-						</p>
-					</li>
-					<li class="services-item">
-						<svg class="services-item-icon" width="" height="">
-							<use href="./images/icons.svg#l"></use>
-						</svg>
-						<p class="services-item-text">Проектуванням</p>
-					</li>
-				</ul>
+				<div class="container">
+					<h2 class="section-title light">Ми забезпечемо вас</h2>
+					<ul class="services-list list">
+						<li class="services-item">
+							<svg class="services-item-icon" width="60" height="60">
+								<use href="./images/icons.svg#furniture"></use>
+							</svg>
+							<p class="services-item-text">Меблями</p>
+						</li>
+
+						<li class="services-item">
+							<svg class="services-item-icon" width="32" height="50">
+								<use href="./images/icons.svg#lighting"></use>
+							</svg>
+							<p class="services-item-text">Освітленням</p>
+						</li>
+
+						<li class="services-item">
+							<svg class="services-item-icon" width="60" height="60">
+								<use href="./images/icons.svg#oven"></use>
+							</svg>
+							<p class="services-item-text">Побутовою технікою</p>
+						</li>
+
+						<li class="services-item">
+							<svg class="services-item-icon" width="60" height="60">
+								<use href="./images/icons.svg#door"></use>
+							</svg>
+							<p class="services-item-text">Дверима</p>
+						</li>
+
+						<li class="services-item">
+							<svg class="services-item-icon" width="40" height="45">
+								<use href="./images/icons.svg#designing"></use>
+							</svg>
+							<p class="services-item-text">Проектуванням</p>
+						</li>
+
+						<li class="services-item">
+							<svg class="services-item-icon" width="45" height="45">
+								<use href="./images/icons.svg#covering"></use>
+							</svg>
+							<p class="services-item-text">
+								Стіновими панелями та підлоговим покриттям
+							</p>
+						</li>
+					</ul>
+				</div>
 			</section>
 
 			<!-- about -->
-			<section class="section-about">
-				<h1 hiden class="about-title container">Про проект Рінго Украхна</h1>
-				<p class="about-first-text">
+			<section class="section-about container">
+				<h2 hidden class="about-title">Про проект Рінго Украхна</h2>
+				<p class="about-text">
 					Проект Рінго Україна - створений виконувати об`єктні задачі
 					комплексного меблювання житлових та комерційних приміщень.
 				</p>
 				<ul class="about-list list">
 					<li class="about-item">
+						<svg class="about-item-icon" width="18" height="18">
+							<use href="./images/icons.svg#list-dot"></use>
+						</svg>
 						<p class="about-item-text">
 							Наш колектив націлений на результат - вчасно реалізувати проект на
 							найвищому рівні. Ми забезпечуємо спокій замовника та вирішуємо
@@ -214,6 +270,9 @@
 						</p>
 					</li>
 					<li class="about-item">
+						<svg class="about-item-icon" width="18" height="18">
+							<use href="./images/icons.svg#list-dot"></use>
+						</svg>
 						<p class="about-item-text">
 							Рінго найкращий підрядник прораба, дизайнера, проект-менеджера або
 							персональний помічник власника бізнесу, квартири чи салону
@@ -224,12 +283,12 @@
 
 			<!-- advantages -->
 			<section class="section section-advantages container">
-				<h1 class="advantages-title">Наші переваги</h1>
+				<h2 class="section-title">Наші переваги</h2>
 				<ul class="advantages-list list">
 					<li class="advantages-item">
 						<span class="advantages-item-number">01</span>
 						<div class="advantages-item-wrap">
-							<p class="advantages-item-title">Мобільність</p>
+							<h3 class="advantages-item-title">Мобільність</h3>
 							<p class="advantages-item-text">
 								Проводимо зустрічі на об`єктах в затишних закладах Києва
 							</p>
@@ -238,7 +297,7 @@
 					<li class="advantages-item">
 						<span class="advantages-item-number">02</span>
 						<div class="advantages-item-wrap">
-							<p class="advantages-item-title">Мобільність</p>
+							<h3 class="advantages-item-title">Надійність</h3>
 							<p class="advantages-item-text">
 								Система нашої роботи зосереджена на якості та термінах
 								завершення проекту
@@ -248,7 +307,7 @@
 					<li class="advantages-item">
 						<span class="advantages-item-number current">03</span>
 						<div class="advantages-item-wrap">
-							<p class="advantages-item-title current">Мобільність</p>
+							<h3 class="advantages-item-title current">Якість</h3>
 							<p class="advantages-item-text">
 								Виготовляємо виключно з перевірених європейських брендів
 							</p>
@@ -257,7 +316,7 @@
 					<li class="advantages-item">
 						<span class="advantages-item-number">04 </span>
 						<div class="advantages-item-wrap">
-							<p class="advantages-item-title">Професіоналізм</p>
+							<h3 class="advantages-item-title">Професіоналізм</h3>
 							<p class="advantages-item-text">
 								Наша команда - це клуб професіоналів, об`єднаних в одній
 								компанії
@@ -267,7 +326,7 @@
 					<li class="advantages-item">
 						<span class="advantages-item-number">05</span>
 						<div class="advantages-item-wrap">
-							<p class="advantages-item-title">Вигідність</p>
+							<h3 class="advantages-item-title">Вигідність</h3>
 							<p class="advantages-item-text">
 								Ми відмовились від шоу-руму та офісу на користь вартості та
 								мобільності
@@ -279,12 +338,12 @@
 
 			<!-- discussion -->
 			<section class="section-discussion">
-				<form class="main-form">
+				<form class="main-form container">
 					<p class="main-form-title">Обговоримо ваш проект?</p>
 					<p class="main-form-text">
 						Заповніть форму і найближчим часом ми зв'яжемося з вами!
 					</p>
-					<div class="form-field">
+					<div class="form-fields">
 						<input
 							type="name"
 							class="form-input"
@@ -292,8 +351,6 @@
 							placeholder="Ім'я"
 							required
 						/>
-					</div>
-					<div class="form-field">
 						<input
 							type="tel"
 							class="form-input"
@@ -301,23 +358,23 @@
 							placeholder="Номер телефону"
 							required
 						/>
-					</div>
-					<div class="form-field">
 						<div class="input-wrap">
-							<label for="file" class="input-file">Прикріпити проект</label>
 							<input
 								type="file"
-								class="form-input"
+								class="form-input visually-hidden"
 								name="discussion-name"
 								id="file"
 							/>
-							<svg class="input-icon" width="15" height="18">
-								<use href="./images/icons.svg#"></use>
+							<svg class="input-icon" width="18" height="18">
+								<use href="./images/icons.svg#file"></use>
 							</svg>
+							<label for="file" class="input-file-lable"
+								>Прикріпити проект</label
+							>
 						</div>
 					</div>
 
-					<button type="submit" class="form-button btn">Відправити</button>
+					<button type="submit" class="form-btn btn">Відправити</button>
 
 					<div class="checkbox-field">
 						<input
@@ -327,13 +384,15 @@
 							value="true"
 							id="privacy"
 						/>
-						<label for="privacy" class="check-text">
-							<span>
+						<label for="privacy" class="check-text-wrap">
+							<div class="check-icon-wrap">
 								<svg class="check-icon" width="5" height="5">
-									<use href="./images/icons.svg#"></use>
+									<use href="./images/icons.svg#check"></use>
 								</svg>
-							</span>
-							Даю згоду на оброблення персональних даних
+							</div>
+							<p class="check-text">
+								Даю згоду на оброблення персональних даних
+							</p>
 						</label>
 					</div>
 				</form>
@@ -341,11 +400,12 @@
 			</section>
 
 			<!-- stages -->
-			<section class="section section-stages container">
+			<section class="section-stages container">
+				<h2 class="section-title">Етапи роботи</h2>
 				<ul class="stages-list list">
 					<li class="stages-item">
 						<div class="stages-item-number">01</div>
-						<p class="stages-item-title">Підписання договору</p>
+						<h3 class="stages-item-title">Підписання договору</h3>
 						<p class="stages-item-text">
 							Визначаємось з бюджетом, матеріалами та фурнітурою. Вносимо правки
 							в проект, підписуємо пакет документів.
@@ -353,7 +413,7 @@
 					</li>
 					<li class="stages-item">
 						<div class="stages-item-number">02</div>
-						<p class="stages-item-title">Виготовлення</p>
+						<h3 class="stages-item-title">Виготовлення</h3>
 						<p class="stages-item-text">
 							Після підписання договору та визначення термінів, команда Рінго
 							приступає до найцікавішого - виробництва!
@@ -361,7 +421,7 @@
 					</li>
 					<li class="stages-item">
 						<div class="stages-item-number">03</div>
-						<p class="stages-item-title">Встановлення</p>
+						<h3 class="stages-item-title">Встановлення</h3>
 						<p class="stages-item-text">
 							По готовності виробництва починаємо монтаж на обєкті. У домовлений
 							час виконуємо доставку та монтаж.
@@ -369,7 +429,7 @@
 					</li>
 					<li class="stages-item">
 						<div class="stages-item-number">04</div>
-						<p class="stages-item-title">Новосілля</p>
+						<h3 class="stages-item-title">Новосілля</h3>
 						<p class="stages-item-text">
 							По закінченню робимо перевірку та підписуємо акт закінчення
 							робівт.
@@ -379,27 +439,58 @@
 			</section>
 
 			<!-- finished-products -->
-			<section class="section section-finished-products">
-				<div class="finished-products-title">Зараз в роботі</div>
-				<div class="slider-finished-products">Слайдер</div>
+			<section class="section section-finished-products container">
+				<h2 class="section-title finished-products-title">Зараз в роботі</h2>
+				<ul class="slider-products list">
+					<li class="slider-products-item">
+						<img
+							srcset="./images/work.jpg 1x, ./images/work-2x.jpg 2x"
+							alt="Інтерєр в ЖК Медовий"
+							src="./images/work.jpg"
+							class="products-item-img"
+							width="600"
+						/>
+						<h3 class="products-item-title">Квартира ЖК Медовий</h3>
+						<p class="products-item-text">3 етап</p>
+					</li>
+				</ul>
+				<div class="slider-switch-products">
+					<svg class="switch-products-icon switch-curent" width="8" height="8">
+						<use href="./images/icons.svg#slider-dot"></use>
+					</svg>
+					<svg class="switch-products-icon" width="8" height="8">
+						<use href="./images/icons.svg#slider-dot"></use>
+					</svg>
+					<svg class="switch-products-icon" width="8" height="8">
+						<use href="./images/icons.svg#slider-dot"></use>
+					</svg>
+					<svg class="switch-products-icon" width="8" height="8">
+						<use href="./images/icons.svg#slider-dot"></use>
+					</svg>
+					<svg class="switch-products-icon" width="8" height="8">
+						<use href="./images/icons.svg#slider-dot"></use>
+					</svg>
+				</div>
 			</section>
 
 			<!-- gifts -->
 			<section class="section-gifts">
-				<h1 class="gifts-title">Рінго роздає подарунки!</h1>
-				<p class="gifts-text">
-					При замовленні до нового року, отримай цінний подарунок для свого
-					комфорту
-				</p>
-				<button class="gifts-btn btn">Хочу подарунок</button>
+				<div class="container">
+					<h1 class="section-title gifts-title">Рінго роздає подарунки!</h1>
+					<p class="gifts-text">
+						При замовленні до нового року, отримай цінний подарунок для свого
+						комфорту
+					</p>
+					<button class="gifts-btn btn">Хочу подарунок</button>
 
-				<div class="toster">
-					<img class="toster-img" src="" alt="Приклад подарунку - тостер" />
-					<div class="toster-wrap">
-						<svg class="toster-icon" width="18" height="18">
-							<use href="./images/icons.svg#"></use>
-						</svg>
-						<p class="toster-text">Подарунок</p>
+					<div class="toster">
+						<img class="toster-img" src="" alt="Приклад подарунку - тостер" />
+						<div class="toster-wrap">
+							<svg class="toster-icon" width="18" height="18">
+								<use href="./images/icons.svg#"></use>
+							</svg>
+							<p class="toster-text">Подарунок</p>
+						</div>
 					</div>
 				</div>
 
@@ -419,10 +510,10 @@
 			</section>
 
 			<!-- modal gifts -->
-			<div class="backdrop is-hidden" data-modal>
+			<!-- <div class="backdrop is-hidden" data-modal>
 				<div class="modal-gifts">
-					<button type="button" class="modal-button btn" data-modal-close>
-						<svg class="modal-button-icon" width="23" height="23">
+					<button type="button" class="modal-btn btn" data-modal-close>
+						<svg class="modal-btn-icon" width="23" height="23">
 							<use href="./images/icons.svg#close"></use>
 						</svg>
 					</button>
@@ -450,7 +541,7 @@
 							/>
 						</div>
 
-						<button type="submit" class="form-button btn">Відправити</button>
+						<button type="submit" class="form-btn btn">Відправити</button>
 
 						<div class="checkbox-field">
 							<input
@@ -471,76 +562,108 @@
 						</div>
 					</form>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- Our partners -->
 			<section class="section section-partners container">
-				<h1 class="partners-title">Наші партнери</h1>
-				<div class="slider-partners">
-					<!-- Слайдер з svg -->
-				</div>
+				<h1 class="section-title">Наші партнери</h1>
+				<ul class="slider-partners-list list">
+					<li class="slider-partners-item">
+						<a href="#" class="slider-partners-link link red">
+							<svg class="slider-partners-icon red" width="100" height="30">
+								<use href="./images/icons.svg#franke"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="slider-partners-item">
+						<a href="#" class="slider-partners-link link red">
+							<svg class="slider-partners-icon red" width="100" height="30">
+								<use href="./images/icons.svg#hafele"></use>
+							</svg>
+						</a>
+					</li>
+					<!-- <li class="slider-partners-item">
+						<a href="#" class="slider-partners-link link">
+							<img
+								class="slider-partners-icon"
+								src="./images/partners-brands/partner-3.png"
+								alt=""
+							/>
+						</a>
+					</li>
+					<li class="slider-partners-item">
+						<a href="#" class="slider-partners-link link">
+							<img
+								class="slider-partners-icon"
+								src="./images/partners-brands/partner-4.png"
+								alt=""
+							/>
+						</a>
+					</li> -->
+				</ul>
+				<ul class="slider-partners-switch list">
+					<li class="switch-partners-item">
+						<svg class="switch-partners-icon" width="20px" height="20px">
+							<use href="./images/icons.svg#arrow-left"></use>
+						</svg>
+					</li>
+					<li class="switch-partners-item">
+						<svg class="switch-partners-icon" width="20px" height="20px">
+							<use href="./images/icons.svg#arrow-right"></use>
+						</svg>
+					</li>
+				</ul>
 			</section>
 
 			<!-- questions -->
 			<section class="section-questions">
-				<form class="main-form">
-					<p class="main-form-title">Залишилися питання?</p>
-					<p class="main-form-text">
-						Отримай безкоштовну консультацію менеджера та прорахунок проекту
-					</p>
-					<div class="form-field">
-						<input
-							type="name"
-							class="form-input"
-							name="questions-name"
-							placeholder="Ім'я"
-							required
-						/>
-					</div>
-					<div class="form-field">
-						<input
-							type="tel"
-							class="form-input"
-							name="questions-tel"
-							placeholder="Номер телефону"
-							required
-						/>
-					</div>
-					<div class="form-field">
-						<div class="input-wrap">
-							<label for="file" class="input-file">Прикріпити проект</label>
+				<div class="container">
+					<form class="main-form">
+						<p class="section-title light">Залишилися питання?</p>
+						<p class="main-form-text">
+							Отримай безкоштовну консультацію менеджера та прорахунок проекту
+						</p>
+						<div class="form-fields">
 							<input
-								type="file"
+								type="name"
 								class="form-input"
 								name="questions-name"
-								id="file"
+								placeholder="Ім'я"
+								required
 							/>
-							<svg class="input-icon" width="15" height="18">
-								<use href="./images/icons.svg#"></use>
-							</svg>
+							<input
+								type="tel"
+								class="form-input"
+								name="questions-tel"
+								placeholder="Номер телефону"
+								required
+							/>
 						</div>
-					</div>
 
-					<button type="submit" class="form-button btn">Відправити</button>
+						<button type="submit" class="form-btn btn">Відправити</button>
 
-					<div class="checkbox-field">
-						<input
-							type="checkbox"
-							class="input-check visually-hidden"
-							name="privacy"
-							value="true"
-							id="privacy"
-						/>
-						<label for="privacy" class="check-text">
-							<span>
-								<svg class="check-icon" width="5" height="5">
-									<use href="./images/icons.svg#"></use>
-								</svg>
-							</span>
-							Даю згоду на оброблення персональних даних
-						</label>
-					</div>
-				</form>
+						<div class="checkbox-field">
+							<input
+								type="checkbox"
+								class="input-check visually-hidden"
+								name="privacy"
+								value="true"
+								id="questions-privacy"
+							/>
+							<label for="questions-privacy" class="check-text-wrap">
+								<div class="check-icon-wrap">
+									<svg class="check-icon" width="5" height="5">
+										<use href="./images/icons.svg#check"></use>
+									</svg>
+								</div>
+								<p class="check-text">
+									Даю згоду на оброблення персональних даних
+								</p>
+							</label>
+						</div>
+					</form>
+				</div>
+
 				<div class="questions-img"></div>
 			</section>
 		</main>
@@ -548,53 +671,47 @@
 			<div class="container">
 				<div class="main-footer">
 					<div class="footer-logo-wrap">
-						<a href="/" class="header-logo">
-							<svg class="header-logo-icon" width="122" height="53">
-								<use href="./img/logo.svg"></use>
+						<a href="/" class="footer-logo">
+							<svg class="footer-logo-icon" width="122" height="53">
+								<use href="./images/icons.svg#logo"></use>
 							</svg>
 						</a>
 						<div class="footer-soc">
 							<div class="footer-soc-text">Соцмережі:</div>
-							<ul class="footer-soc-list list">
-								<li class="footer-soc-item">
-									<a href="#" class="soc-link link">
-										<svg class="soc-icon" width="6" height="6">
-											<use href="./images/icons.svg#instagram"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="footer-soc-item">
-									<a href="#" class="soc-link link">
-										<svg class="soc-icon" width="6" height="6">
-											<use href="./images/icons.svg#facebook"></use>
-										</svg>
-									</a>
-								</li>
-							</ul>
+							<a href="#" class="soc-link link">
+								<svg class="soc-icon" width="18" height="18">
+									<use href="./images/icons.svg#instagram"></use>
+								</svg>
+							</a>
+							<a href="#" class="soc-link link">
+								<svg class="soc-icon" width="20" height="10">
+									<use href="./images/icons.svg#facebook"></use>
+								</svg>
+							</a>
 						</div>
 					</div>
 
 					<div class="footer-nav-wrap">
-						<ul class="footer-left-list list">
-							<li class="footer-left-item">
-								<a href="" class="footer-left-link link">Основні напрямки</a>
+						<ul class="footer-list list">
+							<li class="footer-item">
+								<a href="#" class="footer-link link">Основні напрямки</a>
 							</li>
-							<li class="footer-left-item">
-								<a href="" class="footer-left-link link">Про компанію</a>
+							<li class="footer-item">
+								<a href="#" class="footer-link link">Про компанію</a>
 							</li>
-							<li class="footer-left-item">
-								<a href="" class="footer-left-link link">Переваги</a>
+							<li class="footer-item">
+								<a href="#" class="footer-link link">Переваги</a>
 							</li>
 						</ul>
-						<ul class="footer-right-list list">
-							<li class="footer-right-item">
-								<a href="" class="footer-right-link link">Етапи роботи</a>
+						<ul class="footer-list list">
+							<li class="footer-item">
+								<a href="#" class="footer-link link">Етапи роботи</a>
 							</li>
-							<li class="footer-right-item">
-								<a href="" class="footer-right-link link">Зараз в роботі</a>
+							<li class="footer-item">
+								<a href="#" class="footer-link link">Зараз в роботі</a>
 							</li>
-							<li class="footer-right-item">
-								<a href="" class="footer-right-link link">Стати партнером</a>
+							<li class="footer-item">
+								<a href="#" class="footer-link link">Стати партнером</a>
 							</li>
 						</ul>
 					</div>
@@ -604,42 +721,57 @@
 							<svg class="footer-tel-icon" width="13" height="20">
 								<use href="./images/icons.svg#tel"></use>
 							</svg>
-							<a class="footer-tel" href="tel:+380676615415">+380 67661 5415</a>
+							<a class="footer-tel link" href="tel:+380676615415"
+								>+380 67661 5415</a
+							>
 						</div>
 						<button class="footer-btn btn">На каву з менеджером!</button>
 					</div>
 				</div>
+
 				<div class="subfooter">
 					<p class="subfooter-text">Бренди комплектуючих</p>
 					<ul class="subfooter-brands-list list">
 						<li class="subfooter-brands-item">
 							<a href="#" class="subfooter-brands-link link">
-								<img src="" alt="Логотип бренду" />
+								<svg class="subfooter-brands-icon red" width="96" height="30">
+									<use href="./images/icons.svg#franke"></use>
+								</svg>
 							</a>
 						</li>
 						<li class="subfooter-brands-item">
 							<a href="#" class="subfooter-brands-link link">
-								<img src="" alt="Логотип бренду" />
+								<svg class="slider-partners-icon red" width="140" height="30">
+									<use href="./images/icons.svg#hafele"></use>
+								</svg>
 							</a>
 						</li>
 						<li class="subfooter-brands-item">
 							<a href="#" class="subfooter-brands-link link">
-								<img src="" alt="Логотип бренду" />
+								<svg class="slider-partners-icon red" width="110" height="30">
+									<use href="./images/icons.svg#egger"></use>
+								</svg>
 							</a>
 						</li>
 						<li class="subfooter-brands-item">
 							<a href="#" class="subfooter-brands-link link">
-								<img src="" alt="Логотип бренду" />
+								<svg class="slider-partners-icon red" width="93" height="30">
+									<use href="./images/icons.svg#linken"></use>
+								</svg>
 							</a>
 						</li>
 						<li class="subfooter-brands-item">
 							<a href="#" class="subfooter-brands-link link">
-								<img src="" alt="Логотип бренду" />
+								<svg class="slider-partners-icon red" width="92" height="30">
+									<use href="./images/icons.svg#inoxa"></use>
+								</svg>
 							</a>
 						</li>
 						<li class="subfooter-brands-item">
 							<a href="#" class="subfooter-brands-link link">
-								<img src="" alt="Логотип бренду" />
+								<svg class="slider-partners-icon red" width="112" height="30">
+									<use href="./images/icons.svg#cleaf"></use>
+								</svg>
 							</a>
 						</li>
 						<li class="subfooter-brands-item">
@@ -660,10 +792,12 @@
 					</ul>
 					<div class="subfooter-copywrite-wrap">
 						<p class="subfooter-copywrite">&#169; 2021 Ringo</p>
-						<p class="subfooter-design">Дизайн сайту</p>
+						<a href="#" class="subfooter-design link">Дизайн сайту</a>
 					</div>
 				</div>
 			</div>
 		</footer>
+		<script src="./js/mobile-menu.js"></script>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
